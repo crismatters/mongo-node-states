@@ -1,0 +1,8 @@
+ {% set mongo = salt['grains.filter_by']({
+   'Debian': {
+     'script': 'debian_install.sh',
+   },
+   'RedHat': {
+     'script': 'redhat_install.sh',
+    },
+ })%}
